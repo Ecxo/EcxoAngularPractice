@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ecxo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style/ecxo.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+
+
+
+    </head>
+
+    <body ng-app="ecxoApp">
+        <h1></h1>
+        <nav>
+            <a href="#arvaaja">Arvaaja</a>
+            <a href="#chat">Chat</a>
+        </nav>
+
+        <div ng-controller="MainController">
+            <div id="contents" ng-view></div>
+        </div>
+
+        <footer>
+            <script src="app/app.js"></script>
+
+            <script src="app/controllers/main_controller.js"></script>
+
+            <script src="app/controllers/chat_controller.js"></script>
+            <script src="app/controllers/guess_controller.js"></script>
+        </footer>
+    </body>
+</html>

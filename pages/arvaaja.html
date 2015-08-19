@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Arvaaja</h1>
+        <div ng-hide="started"><p>{{guessmessage}}</p>
+            <button ng-click="start()">Ok</button>
+        </div>
+        <div id="guesszone" ng-hide="!started">
+            <p>Ajatteletko lukua {{currentGuess}}?</p>
+            <button ng-click="smaller()">Pienempää</button>
+            <button ng-click="bigger()">Isompaa</button>
+            <button ng-click="done(true)">Joo!</button>
+            <button ng-click="done(false)" ng-hide="!(guesses>7)">En...</button>
+            <p>Arvauksia: {{guesses}}</p>
+            
+        </div>
+        
+    </body>
+</html>

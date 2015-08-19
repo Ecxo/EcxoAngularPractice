@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <h1>Chat</h1>
+    <div class="chatcontainer">
+        <label>Nimi:</label><input class="chatcontainer input" ng-model="nickname">
+        <br><label>Viesti:</label><input  class="chatcontainer input" ng-model="message">
+        <br><button ng-click="send()">Lähetä</button>
+    </div>
+
+    <section>
+        {{error}}
+        <div ng-repeat="msg in messages| orderBy: '-date' | limitTo:10">
+            <div class="chatbox"> <span class="chatname">[{{msg.name}}] </span><span>{{msg.message}}</span><br>
+                <span class="chatdate"> {{msg.date}}</span>
+            </div>
+
+        </div>
+    </section>
+
+
+</html>

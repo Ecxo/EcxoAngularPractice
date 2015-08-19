@@ -1,0 +1,78 @@
+
+body {
+    text-align: center;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+}
+
+nav a {
+    padding: 20px;
+    margin: 10px;
+    font-size: larger;
+    text-decoration: none;
+
+    border: groove dodgerblue;
+}
+
+nav a:hover {
+
+    background-color: gold;
+}
+
+
+.chatruutu {
+
+    margin-top: 10px;
+}
+
+.chatmessages {
+    list-style-type: none;
+    text-align: center;
+}
+
+label{
+    display:inline-block;
+    width:45px;
+}
+
+.chatcontainer input {
+    width: 200px;
+    clear: both;
+}
+
+.chatbox {
+
+    word-wrap: break-word;
+    background-color: dodgerblue;
+    width : 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+
+}
+
+
+.chatdate {
+    font-size: x-small;
+}
+
+.chatname {
+    font-size:larger;
+}
+
+
+
+
+
+
